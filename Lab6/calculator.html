@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <input type="number" id="num1" placeholder="Enter a number" style="width:70px; font-size:10px;text-align: center;">
+    <input type="number" id="num2" placeholder="Enter a number" style="width:70px; font-size:10px;text-align: center;"><br><br>
+    <label style="margin-left:5px;">
+        <button onclick="add()" value="+">+</button>
+        <button onclick="subtract()" value="-">-</button>
+        <button onclick="multiply()" value="*">*</button>
+        <button onclick="divide()" value="/">/</button>
+    </label>
+    <button onclick="cleaner()" value="">Clear</button>
+    <br><br>
+    <input id="result" placeholder="Result" style="text-align: center;">
+    <script>
+
+        function add() {
+            let firstNum = document.getElementById("num1").value;
+            let secondNum = document.getElementById("num2").value;
+            let sum = +firstNum + +secondNum;
+            document.getElementById("result").value = sum;
+        }
+
+        function subtract() {
+            let firstNum = document.getElementById("num1").value;
+            let secondNum = document.getElementById("num2").value;
+            let diff = +firstNum - +secondNum;
+            document.getElementById("result").value = diff;
+        }
+
+        function multiply() {
+            let firstNum = document.getElementById("num1").value;
+            let secondNum = document.getElementById("num2").value;
+            let pro = +firstNum * +secondNum;
+            document.getElementById("result").value = pro;
+        }
+
+        function divide() {
+            let firstNum = document.getElementById("num1").value;
+            let secondNum = document.getElementById("num2").value;
+            let divd = +firstNum / +secondNum;
+            document.getElementById("result").value = divd;
+        }
+
+        function cleaner() {
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("result").value = "";
+        }
+        
+    </script>
+</body>
+
+</html>

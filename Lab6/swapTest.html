@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Swap</title>
+</head>
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="butn" style="margin-left:200px;">Swap</button><br><br>
+    <img src="/images/H2.jpg" id="img1" width="350px" height="250px" style="object-fit:cover; margin-left: 50px;" />
+
+    <script>
+            let btn=document.getElementById("butn");
+            btn.onclick=function(){
+            if (document.getElementById("img1").src.endsWith('H2.jpg') == true)
+            { 
+                 document.getElementById("img1").src = "/images/H3.jpg";
+
+             } 
+             else if (document.getElementById("img1").src.endsWith("H3.jpg") == true) 
+             { 
+                document.getElementById("img1").src = "/images/H2.jpg"; 
+                
+            }
+        }
+    </script>
+
+</body>
+
+</html>
