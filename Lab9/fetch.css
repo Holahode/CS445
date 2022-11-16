@@ -1,0 +1,33 @@
+#reload {
+    align-items: center;
+}
+
+H3 {
+    
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 10px;
+    
+   
+}
+
+p {
+    align-items: center;
+    line-height: 0.2;
+}
+
+#users li{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    justify-content: center;
+}
+ul {
+    text-align: center;
+}
+
+body{
+    background-color: antiquewhite;
+}
